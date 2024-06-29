@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  --clr: #baff44; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #180036;
+}
+
+button {
+  outline: none;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 90vh;
+}
+
+.hide {
+  transition: ease-out 20s;
+  display: none;
+}
+
+.header-text {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: rgb(98, 205, 84);
+}
+
+.header-logo {
+  height: 30rem;
+  width: 30vw;
+  margin: 2rem;
+}
+
+.nextbtn {
+  background-color: #b1ff4a;
+  color: #143529;
+  margin-top: 2rem;
+  padding: 13px;
+  font-weight: bold;
+  width: 15rem;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  outline: 2px solid rgb(220, 82, 82);
+}
+.nextbtn:hover {
+  letter-spacing: 0.02cm;
+  padding: 15px;
+  box-shadow:  0 0 15px var(--clr);
+}
+
+
+.winner-details{
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  color: aqua;
+  background-color: #180036;
+  height: 2cm;
+  width: 10cm;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.winner-time{
+  margin: 0.5rem;
+}
+
+/* rules */
+.rule-box {
+  background-color: #0f0a46;
+  color: #e1fb6f;
+  margin: 1rem;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.rule-title {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.instructions {
+  margin: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #fff828;
+}
+
+li {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+.startbtn {
+  background-color: #7de782;
+  color: #151519;
+  padding: 10px;
+  width: 15rem;
+  font-weight: bold;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.15rem;
+  margin-bottom: 1.5rem;
+}
+.startbtn:hover{
+  box-shadow:  0 0 15px var(--clr);
+}
+.category-btn {
+  background-color: #c4f66e;
+  color: #08024e;
+  width: 6.8rem;
+  height: 3.4rem;
+  text-align: center;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0.5rem;
+  justify-content: center;
+}
+
+.category-btn:hover{
+  background-color: #80a342;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #95ae3a;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  font-weight: bold;
+}
+
+/* --------------- Questions --------------- */
+.timer{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #403f4c;
+  background-color: #e1fb6f;
+  height: 3.5rem;
+  width: 3.5rem;
+  padding-top: 0.3rem;
+  padding-right: 0.1rem;
+  text-align: center;
+  justify-content: center;
+  border-radius: 500%
+
+}
+
+.question-box {
+  display: flex;
+  margin-top: 14vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.questions {
+  background-color: #403f4c;
+  color: #e1fb6f;
+  border: 0;
+  min-height: 40vh;
+  border-radius: 20px;
+  margin: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-question {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.option-1,.option-2,.option-3,.option-4 {
+  text-align: center;
+  width: 20rem;
+  border: 0;
+  font-size: 0.9rem;
+  background-color: #e1fb6f;
+  color: #403f4c;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.next-question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.nextq-btn {
+  background-color: #5aff44;
+  color: #3d4a32;
+  padding: 13px;
+  width: 15rem;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+
+.choosen {
+  background-color: #448539;
+  color: #d1cd4d;
+}
+
+
+
+.points-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.point-heading{
+  font-size: 48px;
+  color: #94e189;
+}
+.point-text {
+  font-size: 2.25rem;
+  text-align: center;
+  color: #28c410;
+}
+
+
+/* .source-code {
+  margin-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+} */
